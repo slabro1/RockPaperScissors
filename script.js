@@ -16,10 +16,6 @@ function getHumanChoice() {
     return input;
 }
 
-
-
-
-
 function playGame () {
     let humanScore = 0;
     let computerScore = 0; 
@@ -51,11 +47,6 @@ function playGame () {
             humanScore += 1;
             console.log("You win! Rock beats Scissor");
         }
-    }
-    for (let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
     }
     if (humanScore > computerScore) {
         console.log("You win the game")
